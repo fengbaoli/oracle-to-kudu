@@ -6,15 +6,14 @@ get start
 ===================
 ### 1.clone src to load path<br />
 -----------------------
-git clone ### https://github.com/fengbaoli/oracle-to-kudu/\
+git clone ### https://github.com/fengbaoli/oracle-to-kudu.git
 ### 2.download impala jdbc ,oracle jdbc and configure local maven repertory<br />
 -----------------------
-<1>This example shows how to build and run a Maven-based project to execute SQL queries on Impala using JDBC\<br> 
+### <1>This example shows how to build and run a Maven-based project to execute SQL queries on Impala using JDBC 
+This example was tested using Impala 2.3 included with CDH 5.5.2 and the Impala JDBC Driver v2.5.30 
 
-This example was tested using Impala 2.3 included with CDH 5.5.2 and the Impala JDBC Driver v2.5.30\<br> 
-
-When you download the Impala JDBC Driver from the link above, it is packaged as a zip file with separate distributions for JDBC3, JDBC4\<br> 
-and JDBC4.1. This example uses the distribution for JDBC4.1 on RHEL6 x86_64. The downloaded zip file contains the following eleven jar \<br> files:
+When you download the Impala JDBC Driver from the link above, it is packaged as a zip file with separate distributions for JDBC3, JDBC4
+and JDBC4.1. This example uses the distribution for JDBC4.1 on RHEL6 x86_64. The downloaded zip file contains the following eleven jar files:
 (1)  ImpalaJDBC41.jar <br> 
 (2)  TCLIServiceClient.jar\<br> 
 (3)  hive_metastore.jar\<br> 
@@ -32,11 +31,11 @@ for example configure zookeeper-3.4.6.jar maven：\<br>
 mvn install:install-file -Dfile=zookeeper-3.4.6.jar -DgroupId=ora.apache.zookeeper -DartifactId=zookeeper -Dversion=3.4.6  -Dpackaging=jar\<br> 
 <2>Download JDBC from Oracle's official website and configure JDBC manually\<br> 
 mvn install:install-file -Dfile=ojdbc6.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=6.0  -Dpackaging=jar\<br> 
-3.build
+### 3.build<br />
 ---------------------------------
 mvn package
 
-4 deploy
+### 4 deploy<br />
 ------------------------------------
 <1>create dir and put oracle-kudu-1.0-SNAPSHOT.jar into it\<br> 
 <2>Create the conf, data, and logs directories in the jar package sibling directory\<br> 
