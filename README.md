@@ -4,10 +4,10 @@ This program uses Oracle JDBC to export Oracle table data to CSV files, then upl
 
 get start
 ===================
-1.clone src to load path
+### 1.clone src to load path<br />
 -----------------------
-git clone https://github.com/fengbaoli/oracle-to-kudu/\<br> 
-2.download impala jdbc ,oracle jdbc and configure local maven repertory\<br> 
+git clone ### https://github.com/fengbaoli/oracle-to-kudu/\
+### 2.download impala jdbc ,oracle jdbc and configure local maven repertory<br />
 -----------------------
 <1>This example shows how to build and run a Maven-based project to execute SQL queries on Impala using JDBC\<br> 
 
