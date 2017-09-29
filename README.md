@@ -38,27 +38,24 @@ mvn package
 ##### <3>copy edk.properties ,log4j.properties,pk.properties into conf dir 
 ##### <4>modify configure 
 ###### (1)edk.properties
-####### ora_url=jdbc:oracle:thin:@10.205.44.53:1521:ora11g   *oracle jdbc url*
+ora_url=jdbc:oracle:thin:@10.205.44.53:1521:ora11g   *oracle jdbc url*<br />
 ora_username = test *oracle export username* <br />
 ora_password = test *oracle export password* <br />
 
-impala_url=jdbc:impala://hadoop4:21050 *impala jdnc url*
-impala_database = oracle *impala database name*
+impala_url=jdbc:impala://hadoop4:21050 *impala jdnc url*<br />
+impala_database = oracle *impala database name*<br />
 
-batch_size=4 *per export tables nums*
-hdfssuperuser = hdfs *hdfs supper username*
-fs.defaultFS=hdfs://ns1 *hdfs ha*
-dfs.nameservices=ns1 *hdfs ha nameservices*
-
-#local_path=C:\\Users\\Administrator\\Desktop\\export-data-kudu\\data
-local_path=data *local export path,default data dir*
-hdfs_path=/opt/ogg *hdfs unload path*
+batch_size=4 *per export tables nums*<br />
+hdfssuperuser = hdfs *hdfs supper username*<br />
+fs.defaultFS=hdfs://ns1 *hdfs ha*<br />
+dfs.nameservices=ns1 *hdfs ha nameservices*<br />
+local_path=data *local export path,default data dir*<br />
+hdfs_path=/opt/ogg *hdfs unload path*<br />
 
 
-#timezone=Asia/Shanghai
-timezone = PRC *csv file timezone transfer*
-#??????
-skip_tables= *no export tablename,ie:tesst1,test2*
+timezone = PRC *csv file timezone transfer*<br />
+
+skip_tables= *no export tablename,ie:tesst1,test2*<br />
 ###### (2)pk.properties 
 ###### (3)log4j.properties 
 
