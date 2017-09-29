@@ -37,7 +37,7 @@ mvn package
 ##### <2>Create the conf, data, and logs directories in the jar package sibling directory 
 ##### <3>copy edk.properties ,log4j.properties,pk.properties into conf dir 
 ##### <4>modify configure 
-###### (1)edk.properties
+*(1)edk.properties
 ora_url=jdbc:oracle:thin:@10.205.44.53:1521:ora11g            ##*oracle jdbc url*<br />
 ora_username = test            ##*oracle export username* <br />
 ora_password = test           ##*oracle export password* <br />
@@ -51,11 +51,11 @@ local_path=data             ##*local export path,default data dir*<br />
 hdfs_path=/opt/ogg             ##*hdfs unload path*<br />
 timezone = PRC             ##*csv file timezone transfer*<br />
 skip_tables=             ##*no need export tablename,ie:tesst1,test2*<br />
-###### (2)pk.properties 
+*(2)pk.properties 
 *table import kudu define primary key，the format is：*<br />
-`*tablename1 = pk1`
-`*tablename2 = pk2`
-###### (3)log4j.properties 
+`tablename1 = pk1`<br />
+`tablename2 = pk2`<br />
+*(3)log4j.properties 
 
 
 
