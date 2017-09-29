@@ -52,6 +52,10 @@ hdfs_path=/opt/ogg             ##*hdfs unload path*<br />
 timezone = PRC             ##*csv file timezone transfer*<br />
 skip_tables=             ##*no need export tablename,ie:tesst1,test2*<br />
 ###### (2)pk.properties 
+*table import kudu define primary key*
+*format is*
+*tablename1 = pk1*
+*tablename2 = pk2*
 ###### (3)log4j.properties 
 
 
