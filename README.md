@@ -5,7 +5,7 @@ Oracle Data To Kudu
 Get Start
 -----------------------------
 #### 1.clone src to load path 
-git clone  https://github.com/fengbaoli/oracle-to-kudu.git
+`git clone  https://github.com/fengbaoli/oracle-to-kudu.git`
 #### 2.download impala jdbc ,oracle jdbc and configure local maven repertory
 ##### <1>This example shows how to build and run a Maven-based project to execute SQL queries on Impala using JDBC #####
 *This example was tested using Impala 2.3 included with CDH 5.12.0 and the[Impala JDBC Driver](https://www.cloudera.com/downloads/connectors/impala/jdbc/2-5-30.html) v2.5.30*
@@ -30,7 +30,7 @@ mvn install:install-file -Dfile=zookeeper-3.4.6.jar -DgroupId=ora.apache.zookeep
 ##### <2>Download [JDBC from Oracle's official website](http://www.oracle.com/technetwork/database/enterprise-edition/jdbc-112010-090769.html) and configure JDBC manually
 mvn install:install-file -Dfile=ojdbc6.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=6.0  -Dpackaging=jar 
 #### 3.build
-mvn package
+`mvn package`
 
 #### 4 deploy
 ##### <1>create dir and put oracle-kudu-1.0-SNAPSHOT.jar into it 
