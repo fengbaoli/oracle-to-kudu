@@ -1,13 +1,13 @@
 oracle dat to kudu
 ==================
-This program uses Oracle JDBC to export Oracle table data to CSV files, then upload CSV files to HDFS, and finally use impala JDBC to operate kudu, build tables and import data
+*This program uses Oracle JDBC to export Oracle table data to CSV files, then upload CSV files to HDFS, and finally use impala JDBC to operate kudu, build tables and import data*
 
 Get Start
 ===================
-#### 1.clone src to load path<br />
+### 1.clone src to load path ###
 -----------------------
 git clone ### https://github.com/fengbaoli/oracle-to-kudu.git
-#### 2.download impala jdbc ,oracle jdbc and configure local maven repertory
+### 2.download impala jdbc ,oracle jdbc and configure local maven repertory ###
 -----------------------
 ##### <1>This example shows how to build and run a Maven-based project to execute SQL queries on Impala using JDBC 
 This example was tested using Impala 2.3 included with CDH 5.5.2 and the Impala JDBC Driver v2.5.30 
@@ -35,7 +35,7 @@ mvn install:install-file -Dfile=ojdbc6.jar -DgroupId=com.oracle -DartifactId=ojd
 ---------------------------------
 mvn package
 
-#### 4 deploy
+### 4 deploy ###
 ------------------------------------
 #### <1>create dir and put oracle-kudu-1.0-SNAPSHOT.jar into it
 #### <2>Create the conf, data, and logs directories in the jar package sibling directory
