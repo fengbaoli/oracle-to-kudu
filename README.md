@@ -53,8 +53,8 @@ timezone = PRC             ##*csv file timezone transfer*<br />
 skip_tables=             ##*no need export tablename,ie:tesst1,test2*<br />
 ###### (2)pk.properties 
 *table import kudu define primary key，the format is：*<br />
-`*tablename1 = pk1*<br />`
-`*tablename2 = pk2*<br />`
+`*tablename1 = pk1`
+`*tablename2 = pk2`
 ###### (3)log4j.properties 
 
 
