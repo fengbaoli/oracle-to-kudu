@@ -13,7 +13,7 @@ This example was tested using Impala 2.3 included with CDH 5.5.2 and the Impala 
 
 When you download the Impala JDBC Driver from the link above, it is packaged as a zip file with separate distributions for JDBC3, JDBC4
 and JDBC4.1. This example uses the distribution for JDBC4.1 on RHEL6 x86_64. The downloaded zip file contains the following eleven jar files:
- (1)  ImpalaJDBC41.jar
+ (1)  ImpalaJDBC41.jar\<br>
  (2)  TCLIServiceClient.jar
  (3)  hive_metastore.jar 
  (4)  hive_service.jar 
