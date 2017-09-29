@@ -38,11 +38,11 @@ mvn package
 ##### <3>copy edk.properties ,log4j.properties,pk.properties into conf dir 
 ##### <4>modify configure 
 ###### (1)edk.properties
-`ora_url=jdbc:oracle:thin:@10.205.44.53:1521:ora11g`            ##*oracle jdbc url*<br />
-`ora_username = test`            ##*oracle export username* <br />
-`ora_password = test`           ##*oracle export password* <br />
-`impala_url=jdbc:impala://hadoop4:21050`             ##*impala jdnc url*<br />
-`impala_database = oracle`             ##*impala database name*<br />
+`ora_url=jdbc:oracle:thin:@10.205.44.53:1521:ora11g        `##*oracle jdbc url*<br />
+`ora_username = test        `            ##*oracle export username* <br />
+`ora_password = test        `           ##*oracle export password* <br />
+`impala_url=jdbc:impala://hadoop4:21050        `             ##*impala jdnc url*<br />
+`impala_database = oracle        `             ##*impala database name*<br />
 `batch_size=4`             ##*per export tables nums*<br />
 `hdfssuperuser = hdfs`             ##*hdfs supper username*<br />
 `fs.defaultFS=hdfs://ns1`             ##*hdfs ha*<br />
