@@ -37,25 +37,25 @@ mvn package
 ##### <2>Create the conf, data, and logs directories in the jar package sibling directory 
 ##### <3>copy edk.properties ,log4j.properties,pk.properties into conf dir 
 ##### <4>modify configure 
-*(1)edk.properties
-ora_url=jdbc:oracle:thin:@10.205.44.53:1521:ora11g            ##*oracle jdbc url*<br />
-ora_username = test            ##*oracle export username* <br />
-ora_password = test           ##*oracle export password* <br />
-impala_url=jdbc:impala://hadoop4:21050             ##*impala jdnc url*<br />
-impala_database = oracle             ##*impala database name*<br />
-batch_size=4             ##*per export tables nums*<br />
-hdfssuperuser = hdfs             ##*hdfs supper username*<br />
-fs.defaultFS=hdfs://ns1             ##*hdfs ha*<br />
-dfs.nameservices=ns1             ##*hdfs ha nameservices*<br />
-local_path=data             ##*local export path,default data dir*<br />
-hdfs_path=/opt/ogg             ##*hdfs unload path*<br />
-timezone = PRC             ##*csv file timezone transfer*<br />
-skip_tables=             ##*no need export tablename,ie:tesst1,test2*<br />
-*(2)pk.properties 
+###### (1)edk.properties
+`ora_url=jdbc:oracle:thin:@10.205.44.53:1521:ora11g`            ##*oracle jdbc url*<br />
+`ora_username = test`            ##*oracle export username* <br />
+`ora_password = test`           ##*oracle export password* <br />
+`impala_url=jdbc:impala://hadoop4:21050`             ##*impala jdnc url*<br />
+`impala_database = oracle`             ##*impala database name*<br />
+`batch_size=4`             ##*per export tables nums*<br />
+`hdfssuperuser = hdfs`             ##*hdfs supper username*<br />
+`fs.defaultFS=hdfs://ns1`             ##*hdfs ha*<br />
+`dfs.nameservices=ns1`             ##*hdfs ha nameservices*<br />
+`local_path=data`             ##*local export path,default data dir*<br />
+`hdfs_path=/opt/ogg`             ##*hdfs unload path*<br />
+`timezone = PRC`             ##*csv file timezone transfer*<br />
+`skip_tables=`             ##*no need export tablename,ie:tesst1,test2*<br />
+###### (2)pk.properties 
 *table import kudu define primary key，the format is：*<br />
 `tablename1 = pk1`<br />
 `tablename2 = pk2`<br />
-*(3)log4j.properties 
+###### (3)log4j.properties 
 
 
 
