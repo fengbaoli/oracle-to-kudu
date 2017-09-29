@@ -31,7 +31,7 @@ for example configure zookeeper-3.4.6.jar maven：
 mvn install:install-file -Dfile=zookeeper-3.4.6.jar -DgroupId=ora.apache.zookeeper -DartifactId=zookeeper -Dversion=3.4.6  -Dpackaging=jar
 ##### <2>Download JDBC from Oracle's official website and configure JDBC manually
 mvn install:install-file -Dfile=ojdbc6.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=6.0  -Dpackaging=jar 
-#### 3.build
+#### 3.build####
 ---------------------------------
 mvn package
 
